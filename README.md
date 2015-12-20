@@ -28,11 +28,11 @@ tar -xvzf [path-to-your-tarball.tar.gz]```
 
 4) To start Scheme, use 
 
-```/usr/local/bin/mechanics```
+``` /usr/local/bin/mechanics ```
 
 Or, if this directory is in your path, use 
 
-```mechanics```
+``` mechanics ```
 
 5) Useful documetation is under /usr/local/scmutils/manual/
 
