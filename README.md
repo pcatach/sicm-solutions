@@ -22,19 +22,21 @@ Ex: For my system (linux 64-bit), I downloaded the file scmutils-20140302-x86-64
 
 3) Execute:
 
-```cd /usr/local 
-tar -xvzf [path-to-your-tarball.tar.gz]```
+```
+cd /usr/local
+tar -xvzf [path-to-your-tarball.tar.gz]
+```
 
 
-4) To start Scheme, use 
+4) To start Scheme, use
 
 ``` /usr/local/bin/mechanics ```
 
-Or, if this directory is in your path, use 
+Or, if this directory is in your path, use
 
 ``` mechanics ```
 
-5) Useful documetation is under /usr/local/scmutils/manual/
+5) Useful documentation is under /usr/local/scmutils/manual/
 
 ### Edwin and Emacs
 
@@ -44,15 +46,17 @@ Edwin is an Emacs-like editor, and it opens when you run "mechanics".
 
 To use scheme/scmutils with Emacs, include the following in your .emacs:
 
-```(defun mechanics ()
+```
+(defun mechanics ()
   (interactive)
-  (run-scheme 
+  (run-scheme
     "ROOT/mit-scheme/bin/scheme --library ROOT/mit-scheme/lib"
-  ))```
+    ))
+```
 
 Replacing ROOT with the directory in which smutils is installed, in my case /usr/local/scmutils.
 Now, restart emacs (or use C-x C-e to evaluate the function above), and run the environment with M-x mechanics.
-Checkout this reference for more: http://redsymbol.net/articles/using-gnu-emacs-with-scmutils/ 
+Checkout this reference for more: http://redsymbol.net/articles/using-gnu-emacs-with-scmutils/
 
 ### Useful links
 
@@ -61,6 +65,3 @@ Edwin cheat sheet: http://groups.csail.mit.edu/mac/users/gjs/6946/cheat-sheet.pd
 Scmutils begginer's guide: http://groups.csail.mit.edu/mac/users/gjs/6946/beginner.pdf
 
 Scmutils manual: http://groups.csail.mit.edu/mac/users/gjs/6946/refman.pdf
-
-
-
