@@ -1,3 +1,7 @@
+; exercise 1-39. Double pendulum behaviour
+
+;functions
+
 (define ((Lagrange-equations L) q)
   (-
    (D (compose ((partial 2) L) (Gamma q)))
@@ -70,9 +74,7 @@
  50.0
  1.0e-12)
 
-
-
-;;;;;;;;;;;;;;;;;
+; TODO
 
 (print-expression
  ((doublepend-state-derivative 'g 'l1 'l2 'm1 'm2)
