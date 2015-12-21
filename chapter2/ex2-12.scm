@@ -1,3 +1,5 @@
+; exercise 2-1. Nutation of the top
+
 (define ((Lagrange-equations L) q)
   (-
    (D (compose ((partial 2) L) (Gamma q)))
