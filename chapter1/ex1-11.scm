@@ -20,7 +20,6 @@
         (+ (/ (+ (square x) (square y)) 2) (* (square x) y))
         (/ (cube y) 3)))
       )))
-
 (define q (literal-function 'q (-> Real (UP Real Real))))
 
 (print-expression
