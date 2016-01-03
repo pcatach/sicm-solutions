@@ -19,12 +19,12 @@
       (-
        (+
         (* 1/2 m2 (square hdot))
-        (* 1/2 m1 (+ (square hdot) (square (* phidot l1))))
-        (* 1/2 m3 (+ (square hdot) (square (* thetadot l2)))))
+        (* 1/2 m1 (square (+ hdot (* phidot l1))))
+        (* 1/2 m3 (square (+ hdot (* thetadot l2))))
        (+
         (* m2 g h)
         (* m1 g (- h (* l1 (cos phi))))
-        (* m3 g (- h (* l2 (cos theta)))))))))
+        (* m3 g (- h (* l2 (cos theta))))))))))
 
 (print-expression ((L-linkage 'm1 'm2 'm3 'l1 'l2 'g)
                    (->local 't (up 'h 'phi 'theta) (up 'hdot 'phidot 'thetadot))))
