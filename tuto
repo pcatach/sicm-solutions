@@ -1,0 +1,72 @@
+> ;comment
+> 5     ;integer
+5
+> > 4/8
+1/2
+> "string"
+"string"
+> 'symbol
+symbol
+> #t    ;true
+#t
+> > #f  ;false
+#f
+> > forgot-a-quote
+
+assertion-violation: undefined variable [global]
+                     forgot-a-quote
+                     user
+1>
+> ;press CtrlD to exit debugging mode
+> '(1 2 3)
+(1 2 3)
+> '( (list 1) (list 2) )
+((list 1) (list 2))
+> ;procedure calls: (name_of_procedure arg1 arg2)
+> (+ 2 3)
+5
+> (list 'a 'b 'c)
+(a b c)
+> ;lambda creates procedures
+> (lambda (x) (+ x x))
+#{procedure 8538}
+> ((lambda (x) (+ x x)) 8)
+16
+> ;define creates variables
+> (define six 6)
+> six
+6
+> (define double (lambda (x) (+ x x)))
+> (double 5)
+10
+> (equal? 'a 'b) ;compares two objects
+#f
+> > (null? '()) ;returns #t for empty list
+#t
+> (string>? "abc" "abc") ;compares strings
+#f
+> (car '(a b c))        ;returns first elem
+a
+> (cdr '(a b c))        ;returns rest of elems
+(b c)
+> (cons 'a '(b c))
+(a b c)
+> (append '(a) '(b c))
+(a b c)
+> ;conditionals
+> (define sign
+    (lambda (n)
+     (cond
+      ((> n 0) 1)
+      ((< n 0) -1)
+      (#t 0))))
+> (sign -15)
+-1
+> ;recursion
+> (define factorial
+    (lambda (n)
+      (cond
+        ((= 0 n) 1)
+        (#t (* n (factorial (- n 1)))))))
+> (factorial 5)
+120
