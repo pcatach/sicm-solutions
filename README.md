@@ -2,9 +2,9 @@
 
 The goal of this repository is to provide the solutions for the exercises of the book "Structure and Interpretation of Classical Mechanics", by Gerald Jay Sussman and Jack Wisdom.
 
-Book: http://mitpress.mit.edu/sites/default/files/titles/content/sicm/book.html
+Book: https://mitpress.mit.edu/sites/default/files/titles/content/sicm_edition_2/book.html
 
-Feel free to contribute!
+Feel free to contribute with a Pull Request if you have any other solutions or fixes to my solutions.
 
 ## How to use
 
